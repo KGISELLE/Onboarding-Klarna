@@ -1,0 +1,12 @@
+// Personalizar variables de bootstrap
+$font-family-sans-serif:'Poppins', sans-serif;
+$info:#5584EB;
+$dark:#01022E;
+$success: #12D57D;
+$secondary:#4800FF;
+$navbar-light-color:#FFFFFF;
+$navbar-light-hover-color: #5584EB;
+$card-border-width: 0px;
+
+// Importar bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

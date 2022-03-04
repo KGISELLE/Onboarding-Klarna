@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tipografia a utilizar -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Traer hojas de estilos SASS-->
+  <link rel="stylesheet" href="../SASS/customize.css">
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Traer libreria DrawFlow -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow/dist/drawflow.min.css"/>
+  <script src="https://cdn.jsdelivr.net/gh/jerosoler/Drawflow/dist/drawflow.min.js"></script>
+
+  <title>WebOnboardingKlarna</title>
+</head>
+
+<body>
+  <div>
+    <header>
+      <!--TODO: nav-bar-language -->
+      <nav class="language-menu">
+        <button type="button" class="language-button">
+          <img class="icon-world" src="../assets/icon-world.svg" alt="icon_world_lightBlue">
+          <p>English</p>
+          <img class="icon-dropdown" src="../assets/Icon-arrow.svg" alt="icon_dropdown">
+        </button>
+      </nav>
+
+      <!--TODO: nav-bar bootstrap 5-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img class="logo-white" src="../assets/klarna-logo.svg" alt="logo-white">
+          </a>
+          <!-- Botón menu hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-dark main-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
+
+              <!-- menu desplegable solutions -->
+              <li class="nav-item dropdown ms-0 ms-lg-5 text-center">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Solutions
+                </a>
+                <ul class="dropdown-menu line-container" aria-labelledby="navbarDropdown">
+                  <div>
+                    <li><a class="dropdown-item" href="#"><b>Use Case</b></a></li>
+                    <li><a class="dropdown-item" href="#">Onboarding</a></li>
+                    <li><a class="dropdown-item" href="#">Leads acquisition</a></li>
+                    <li><a class="dropdown-item" href="#">Sales</a></li>
+                  </div>
+                  <div class="divider-line">
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><b>Industries</b></a></li>
+                    <li><a class="dropdown-item" href="#">Fin-tech</a></li>
+                    <li><a class="dropdown-item" href="#">Ecommerce</a></li>
+                    <li><a class="dropdown-item" href="#">RRHH</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item mx-0 mx-lg-4 text-center">
+                <a class="nav-link" aria-current="page" href="#">Price</a>
+              </li>
+              
+              <!-- menu desplegable Resource -->
+              <li class="nav-item dropdown me-0 me-lg-3 text-center">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resource
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">KlarnaNews</a></li>
+                  <li><a class="dropdown-item" href="#">Documents</a></li>
+                  <li><a class="dropdown-item" href="#">Library</a></li>
+                  <li><a class="dropdown-item" href="#">Podcast</a></li>
+                  <li><a class="dropdown-item" href="#">Frequent questions</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item me-0 me-lg-5 text-center">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Link Login y boton free trial -->
+          <div class="collapse navbar-collapse text-center login-dropdown" id="navbarSupportedContent">
+            <a class="nav-link text-light" href="#">Login</a>
+            <button class="btn btn-secondary" type="submit">Free trial</button>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    
+
+    <main>
+      <!--TODO: Section-main:"Simplify your users onboarding" -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2><strong>Simplify your<br><span>users onboarding</span><br>with WhatsApp</strong></h2>
+            <h3>Run background checks and identity validation processes in simple chat flows</h3>
+            <div class="button-main">
+              <button type="button" class="whatsapp-btn">
+                <p>Connect now!</p>
+                <img class="whatsapp-icon" src="../assets/Icon-WA.svg" alt="whatsapp_icon">
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img class="img-fluid" src="../assets/Group 14.svg" alt="main_banner-users_onboarding">
+          </div>
+        </div>
+      </div>
+
+      <!--TODO: Section-Customers:"Allowing +10,000..." -->
+      <div class="customers-banner">
+        <p>Allowing +10,000 clients to easily onboard their users via WhatsApp</p>
+        <img class="img-fluid" src="../assets/logos-empresas.svg" alt="customer_logos">
+      </div>
+
+      <!--TODO: Section-Engage-Users:"Engage users for..." -->
+      <div class="engage-section">
+        <p class="engage-text"><span>Engage users for</span> higher conversion rates:</p>
+
+        <!--TODO: crear tarjeta -->
+        <div class="container-fluid container-cards">
+          <div class="card text-center" style = "width: 20rem">
+            <img src="../assets/Chat-Blanco.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="engage-icon" src="../assets/Icon_1.svg" alt="green_icon">
+              <p class="card-text engageCard-text"><b>Create</b> your own low-code chat flows for you business WhatsApp account.</p>
+            </div>
+          </div>
+
+          <div class="card text-center" style = "width: 20rem">
+            <img src="../assets/Chat-Blanco.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="engage-icon" src="../assets/Icon_2.svg" alt="green_icon">
+              <p class="card-text engageCard2-text"><b>Protect</b> your interactions with the security the business requires: •KYC/AML •Face Match •ID validation</p>
+            </div>
+          </div>
+
+          <div class="card text-center" style = "width: 20rem">
+            <img src="../assets/Chat-Blanco.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="engage-icon" src="../assets/Icon_3.svg" alt="green_icon">
+              <p class="card-text engageCard-text"><b>Increase</b> conversion rate by giving them the easiest experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- whatsapp-btn -->
+        <div class="button-engage">
+          <button type="button" class="whatsapp-btn">
+            <p>Connect now!</p>
+            <img class="whatsapp-icon" src="../assets/Icon-WA.svg" alt="whatsapp_icon">
+          </button>
+        </div>
+      </div>
+
+      <!--TODO: Section-DrawFlow -->
+      <div class="section-drawflow container">
+        <div class="modal-mobile">
+          <div class="modal-container">
+            <img class="celular" src="../assets/mobile.svg" alt="">
+          </div>
+        </div>
+
+        <div class="drawflow-banner">
+          <p>Start building now your onboarding chat flows. <b>No code is required.</b></p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-2 icon-container-drawflow">
+              <img class="icon-drawflow" src="../assets/icon-yellow-question.svg" alt="question_icon">
+              <img class="icon-drawflow" src="../assets/icon-yellow-list.svg" alt="question_icon">
+              <img class="icon-drawflow" src="../assets/icon-yellow-at.svg" alt="question_icon">
+              <img class="icon-drawflow" src="../assets/icon-yellow-card.svg" alt="question_icon">
+              <img class="icon-drawflow" src="../assets/icon-yellow-mobile.svg" alt="question_icon">
+            </div>
+
+            <div class="col-10 drawflow-outline">
+              <!--! Agregar libreria drawFlow en el espacio indicado -->
+              <div id="drawflow"></div>
+              <p class="step1"><b>Step 1.</b><br>Drag and drop</p>
+              <p class="step2"><b>Step 2.</b><br>Write your message</p>
+              <p class="step3"><b>Step 3.</b><br>Build a flow</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--TODO: Section-Rate-Conversion-Banner -->
+      <div class="container-fluid rate-conversion-banner">
+        <div class="rate-text">
+          <span>+100</span>
+          <p>Customers</p>
+        </div>
+
+        <div class="rate-text">
+          <span>+40%</span>
+          <p>Conversion</p>
+        </div>
+
+        <div class="rate-text">
+          <span>+50K</span>
+          <p>Interactions</p>
+        </div>
+      </div>
+
+      <!--TODO: Section-Feedback-Customers -->
+      <div class="feedback-customers">
+        <p class="feedback-customers-text">Feedback from <b>product leaders</b></p>
+
+        <!--TODO: crear tarjetas verdes -->
+        <div class="container-fluid container-cards">
+          
+          <div class="card card-customers" style = "width: 16rem">
+            <img src="../assets/Chat-verde.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="profile-img" src="../assets/Imagen-perfil.svg" alt="profile_imagen">
+              <p class="card-text customer-text-card">“Muy <b>sencilla</b> de usar, <b>amigable</b>, con un equipo detrás super dispuesto a <b>mejorar</b> y un trato al cliente increíble .”</p>
+              <div class="info-customer">
+                <img src="../assets/Icon-Linkedin.svg" alt="linkedin_icon">
+                <div class="name-customer">
+                  <p><b>Marcela Muñoz</b></p>
+                  <p>Quality Specialist Cabify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-customers" style = "width: 16rem">
+            <img src="../assets/Chat-verde.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="profile-img" src="../assets/Imagen-perfil.svg" alt="profile_imagen">
+              <p class="card-text customer-text-card">“Muy <b>sencilla</b> de usar, <b>amigable</b>, con un equipo detrás super dispuesto a <b>mejorar</b> y un trato al cliente increíble .”</p>
+              <div class="info-customer">
+                <img src="../assets/Icon-Linkedin.svg" alt="linkedin_icon">
+                <div class="name-customer">
+                  <p><b>Marcela Muñoz</b></p>
+                  <p>Quality Specialist Cabify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-customers" style = "width: 16rem">
+            <img src="../assets/Chat-verde.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="profile-img" src="../assets/Imagen-perfil.svg" alt="profile_imagen">
+              <p class="card-text customer-text-card">“Muy <b>sencilla</b> de usar, <b>amigable</b>, con un equipo detrás super dispuesto a <b>mejorar</b> y un trato al cliente increíble .”</p>
+              <div class="info-customer">
+                <img src="../assets/Icon-Linkedin.svg" alt="linkedin_icon">
+                <div class="name-customer">
+                  <p><b>Marcela Muñoz</b></p>
+                  <p>Quality Specialist Cabify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--TODO: Section-Get-higher-users-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2><strong>Get higher user<br><span>conversion rates.</span></strong></h2>
+            <h3>Background checks and identity validation processes in simple chat flows.</h3>
+            <div class="button-main pt-3">
+              <button type="button" class="whatsapp-btn">
+                <p>Connect now!</p>
+                <img class="whatsapp-icon" src="../assets/Icon-WA.svg" alt="whatsapp_icon">
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img class="img-fluid" src="../assets/Imagenes-usurios.png" alt="main_banner-users_onboarding">
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+
+    <!--TODO: Footer-->
+    <footer class="text-light">
+    
+      <!-- TODO: Section: Links footer -->
+      <div class="container">
+        <div class="row">
+          <!--TODO: logo -->
+          <div class="col-lg-3 text-center text-lg-start">
+            <a class="navbar-brand" href="#">
+              <img class="logo-footer mt-4" src="../assets/klarna-logo.svg" alt="logo-white">
+            </a>
+            <div class="term-text">
+              <p>Terms and Conditions</p>
+              <p>Notice of Privacy</p>
+              <p>Privacy policies</p>
+            </div>
+          </div>
+      
+          <!--TODO: menu options footer -->
+          <div class="col-lg-4 text-center text-lg-start">
+            <h4>Products</h4>
+            <div class="d-flex justify-content-center justify-content-lg-start text-start">
+              <div class="cases-menu">
+                <p><b>Use Cases</b></p>
+                <p>Onboarding</p>
+                <p>Leads acquisition</p>
+                <p>Sales</p>
+              </div>
+              <div class="industries-menu">
+                <p><b>Industries</b></p>
+                <p>Fin-tech</p>
+                <p>Ecommerce</p>
+                <p>RRHH</p>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-2 resource-menu text-center text-lg-start">
+            <h4>Resource</h4>
+            <p>KlarnaNews</p>
+            <p>Documents</p>
+            <p>Library</p>
+            <p>Podcast</p>
+            <p>Frequent questions</p>
+          </div>
+      
+          <div class="col-lg-2 ps-lg-5 contact-menu text-center text-lg-start">
+            <h4>Contact</h4>
+            <p>About us</p>
+            <p>Press and events</p>
+            <p>Work with us</p>
+            <p>Support</p>
+          </div>
+        </div>
+      </div>
+
+      <!--TODO: Section: Social media -->
+      <section class="social-media">
+        <button type="button" class="language-button-footer">
+          <img class="icon-world" src="../assets/icon-world-white.svg" alt="icon_world_lightBlue">
+          <p>English</p>
+          <img class="icon-dropdown" src="../assets/Icon-arrow.svg" alt="icon_dropdown">
+        </button>
+
+        <img class="redes-icon" src="../assets/IconRedes.svg" alt="">
+      </section>
+    
+      <!-- Copyright -->
+      <div class="copyright-text text-center">
+        <p>2022 Copyright © - Klarna</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--TODO: Fin Footer -->
+
+  </div>
+
+  
+  <!--! agregando nodos al chart drawflow -->
+  <script>
+    var id = document.getElementById("drawflow");
+    const editor = new Drawflow(id);
+    editor.start();
+    var html = `<div class="container-drawflow">Welcome message<input type="text" df-name class="text-box"></div>`;
+    var data = { "name": 'Hello! Welcome let’s start!' };
+    var html2 = `<div class="container-drawflow">Question<input type="text" df-name class="text-box2"></div>`;
+    var data2 = { "name": 'Write here…' };
+    var html3 = `<div class="container-new"><input type="text" df-name class="text-box3"></div>`;
+    var data3 = { "name": '+' };
+    editor.addNode('welcome', 0, 1, 30, 80, 'welcome', data, html);
+    editor.addNode('question', 1, 2, 270, 105, 'question', data2, html2);
+    editor.addNode('new', 1, 0, 520, 50, 'new', data3, html3);
+    editor.addNode('new', 1, 0, 520, 180, 'new',data3, html3);
+  </script>
+
+  <!--! agregando estilos a los nodos del chart drawflow -->
+  <style>
+    #drawflow {
+      position: relative;
+      text-align: initial;
+      width: 100%;
+      height: 320px;
+    }
+    .drawflow .drawflow-node {
+      background-color: white;
+      border: 1px solid #F0F0F0;
+      box-shadow: 0px 0px 20px #00000029;
+    }
+    .container-drawflow {
+      font-size: 13px;
+    }
+    .text-box {
+      background-color: #F0F0F0;
+      width: 8rem;
+      height: 5rem;
+      border: 1px solid #F0F0F0;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      padding: 10px;
+      text-overflow: ellipsis;
+    }
+    .text-box2 {
+      background-color: #F0F0F0;
+      width: 8rem;
+      border: 1px solid #F0F0F0;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+      padding: 10px;
+      text-overflow: ellipsis;
+      height: 2rem;
+    }
+    .container-new {
+      font-size: 2rem;
+      font-weight:500;
+      color: #9B9B9B;
+    }
+    .text-box3 {
+      background-color: white;
+      border: 2px dashed #9B9B9B;
+      box-shadow: 0px 0px 20px #00000029;
+      width: 8rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight:500;
+      color: #9B9B9B;
+    }
+  </style>
+
+  <!-- codigo JS para abrir y cerrar el modal -->
+  <script src="./index.js"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
