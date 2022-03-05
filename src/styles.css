@@ -75,7 +75,7 @@ h2 {
 }
 
 span {
-  color: #12D57D;
+  color: #0AA8CE;
   font-weight: bold;
 }
 
@@ -91,10 +91,10 @@ h3 {
 }
 
 .whatsapp-btn {
-  background-color: #12D57D;
+  background-color: #0AA8CE;
   color: #FFFFFF;
   border-radius: 10px;
-  border: 1px solid #12D57D;
+  border: 1px solid #0AA8CE;
   padding: 8px 20px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,7 +1,7 @@
 <svg width="701" height="654" viewBox="0 0 701 654" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <path d="M516 549C516 490.458 563.458 443 622 443H701V652H516V549Z" fill="#0AA8CE"/>
 <path d="M578 73C578 61.9543 586.954 53 598 53H701V269H598C586.954 269 578 260.046 578 249V73Z" fill="#FFBB00"/>
-<circle cx="346" cy="441" r="80" fill="#030FFD"/>
+<circle cx="346" cy="441" r="80" fill="#0AA8CE"/>
 <ellipse cx="460" cy="393" rx="61" ry="74" fill="#FFBB00"/>
 <rect x="52" width="537" height="408" fill="url(#pattern0)"/>
 <rect y="69" width="426" height="584.247" fill="url(#pattern1)"/>
@@ -9,8 +9,8 @@
 <path d="M112 175H80L112 203V175Z" fill="#FB852E"/>
 <rect x="99" y="408" width="155" height="94" rx="15" fill="#FB852E"/>
 <path d="M112 408H80L112 436V408Z" fill="#FB852E"/>
-<rect x="144.431" y="309" width="109.569" height="66" rx="15" fill="#4800FF"/>
-<path d="M153.621 309H131L153.621 328.66V309Z" fill="#4800FF"/>
+<rect x="144.431" y="309" width="109.569" height="66" rx="15" fill="#0AA8CE"/>
+<path d="M153.621 309H131L153.621 328.66V309Z" fill="#0AA8CE"/>
 <rect x="64" y="272" width="403" height="381" fill="url(#pattern2)"/>
 <rect x="82" y="101" width="95" height="34" fill="white"/>
 <defs>
